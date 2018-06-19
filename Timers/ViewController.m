@@ -22,7 +22,6 @@
     
     [t run];
     
-    //[t cancelTimer];
     
 }
 

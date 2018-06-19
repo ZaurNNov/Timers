@@ -11,6 +11,6 @@
 @interface Timer : NSObject
 
 -(void)run;
--(void)cancelTimer;
+-(void)allTimersSTOP;
 
 @end

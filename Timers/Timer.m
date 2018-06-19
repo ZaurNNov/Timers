@@ -42,6 +42,14 @@
         [self stopTimer];
         
     });
+    
+    sec = 5;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(sec * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"stop after %d seconds", sec);
+        [self allTimersSTOP];
+    });
+    
+//    [self allTimersSTOP];
 }
 
 -(void)stopAfterDelaySeconds:(int)delaySeconds {
@@ -81,7 +89,7 @@
         dispatch_source_cancel(self.timerSource);
         self.timerSource = nil;
     }
-    NSLog(@"А это конец!\n");
+    
     NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
@@ -123,6 +131,20 @@ dispatch_source_t CreateTimer(uint64_t interval, uint64_t leeway, dispatch_queue
 {
     NSLog(@"JUST TO TEST 2");
     // Staff code...
+}
+
+-(void)allTimersSTOP {
+    
+    while (self.myTimer) {
+        [self stopTimer];
+    }
+    
+    while (self.timerSource) {
+        [self cancelTimer];
+    }
+    
+    NSLog(@"All timers stop and kill");
+    NSLog(@"But dispatch threads is live (without timers)");
 }
 
 /*
