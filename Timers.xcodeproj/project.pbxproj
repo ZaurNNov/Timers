@@ -13,6 +13,7 @@
 		CEF8E86620D92C66001DAADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF8E86520D92C66001DAADC /* Assets.xcassets */; };
 		CEF8E86920D92C66001DAADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8E86720D92C66001DAADC /* LaunchScreen.storyboard */; };
 		CEF8E86C20D92C66001DAADC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF8E86B20D92C66001DAADC /* main.m */; };
+		CEF8E87420D92C75001DAADC /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF8E87320D92C75001DAADC /* Timer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CEF8E86820D92C66001DAADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF8E86A20D92C66001DAADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF8E86B20D92C66001DAADC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF8E87220D92C75001DAADC /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		CEF8E87320D92C75001DAADC /* Timer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				CEF8E86720D92C66001DAADC /* LaunchScreen.storyboard */,
 				CEF8E86A20D92C66001DAADC /* Info.plist */,
 				CEF8E86B20D92C66001DAADC /* main.m */,
+				CEF8E87220D92C75001DAADC /* Timer.h */,
+				CEF8E87320D92C75001DAADC /* Timer.m */,
 			);
 			path = Timers;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				CEF8E86120D92C64001DAADC /* ViewController.m in Sources */,
 				CEF8E86C20D92C66001DAADC /* main.m in Sources */,
 				CEF8E85E20D92C64001DAADC /* AppDelegate.m in Sources */,
+				CEF8E87420D92C75001DAADC /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

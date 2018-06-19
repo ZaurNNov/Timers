@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Timer.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Timer *t = [[Timer alloc] init];
+    
+    [t run];
+    
+    //[t cancelTimer];
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end
