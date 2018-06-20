@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        NSLog(@"%@ - %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+        NSLog(@"\n*********** Hello world ************");
+        
+    });
+    
     return YES;
 }
 
